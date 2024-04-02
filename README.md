@@ -1,8 +1,20 @@
-# React + Vite
+# React Hook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React Hooks কি?
 
-Currently, two official plugins are available:
+React Hooks হলো React ের একটি নতুন ফিচার যা ফাংশানাল কম্পোনেন্টকে আরও বেশি শক্তিশালী করে তোলে। এগুলির সাহায্যে আমরা ক্লাস কম্পোনেন্ট লিখতে না হয়েই ফাংশানাল কম্পোনেন্টের ভিতরেই স্টেট (state) ম্যানেজ করতে পারি এবং অন্যান্য React এর ফিচার ব্যবহার করতে পারি।
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Hooks কেন ব্যবহার করবেন?
+
+Hooks ব্যবহারের কয়েকটি কারণ হলো:
+
+কম কোড: ফাংশানাল কম্পোনেন্ট সাধারণত ক্লাস কম্পোনেন্টের চেয়ে লিখতে সহজ এবং কম কোডের প্রয়োজন হয়। Hooks এটি আরও সহজ করে তোলে।
+স্টেট ম্যানেজমেন্ট: Hooks এর সাহায্যে আমরা সহজেই ফাংশানাল কম্পোনেন্টের ভিতরে স্টেট ম্যানেজ করতে পারি।
+Code Reusability: Hooks কোডের পুনঃব্যবহারযোগ্যতা বাড়িয়ে দেয়।
+কিছু কমন Hooks:
+
+React এ অনেক ধরনের Hooks আছে। এখানে কয়েকটি কমন Hooks এর উদাহরণ দেওয়া হলো:
+
+useState: এটি সবচেয়ে বেশি ব্যবহৃত Hook। এটি একটি কম্পোনেন্টের স্টেট (state) পরিচালনা করতে ব্যবহৃত হয়।
+useEffect: এই Hookটি কম্পোনেন্টের lifecycle এর সাথে সম্পর্কিত। এটি কোনো কাজ (side effect) চালানোর জন্যে ব্যবহৃত হয়, যেমন ডাটা ফেッチ করা (data fetching) বা সাবস্ক্রিপশন নেওয়া (subscription) ইত্যাদি।
+useReducer: जटिल স্টেট ম্যানেজমেন্টের জন্যে useState এর চেয়ে আরও বেশি নিয়ন্ত্রণের প্রয়োজন হলে useReducer Hook ব্যবহার করা হয়।

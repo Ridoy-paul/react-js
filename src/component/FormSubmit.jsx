@@ -6,7 +6,6 @@ const FormSubmit = () => {
         e.preventDefault();
     }
 
-
     return (
         <div>
             <form onSubmit={postFormData}>
