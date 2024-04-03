@@ -1,14 +1,18 @@
-import './App.css'
+import { useRef } from "react";
+const App = () => {
+  let myHeadLine = useRef();
+  
 
-function App() {
- 
+  const buttonClick = () => {
+    myHeadLine.current.innerText = "Hello";
+  }
+
   return (
-    <>
-      <div>
-        hello world
-      </div>
-    </>
-  )
-}
+    <div>
+      <h1 ref={myHeadLine}></h1>
+      <button type="button" onClick={buttonClick}>Click me</button>
+    </div>
+  );
+};
 
-export default App
+export default App;
